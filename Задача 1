@@ -1,0 +1,58 @@
+# PR1_Kabalnova_lab_rab_1
+<!DOCTYPE HTML>
+<html>
+<head>
+</head>
+<body>
+
+<script>
+var c=parseFloat(prompt('Vvedite c', ''));
+var d=parseFloat(prompt('Vvedite d', ''));
+var max=0;
+var min=0;
+var dis = 9+(4*Math.abs((+c)*(+d)));
+
+//If(dis<0)
+//{
+//    alert ('Korney net');
+//}
+//If(dis==0)
+//{
+//    var max=3/2; alert(max);
+//}
+//If (dis>0)
+//    {
+      var x1= (3-Math.sqrt((+dis)))/2;
+var x2= (3+Math.sqrt((+dis)))/2;
+alert(x1);
+alert(x2);
+      if(x1>x2)
+        {
+            max=parseFloat(x1);
+            min=parseFloat(x2);
+
+        }
+    if (x1<x2)
+     {
+       max=parseFloat(x2);
+       min=parseFloat(x1);
+
+      }
+var h=(c*Math.pow(max,3))+(d*Math.pow(min,2))-(c*d);
+alert(h);
+var k=(+c)*(+max)*(+max)*(+max)+(+d)*(+min)*(+min)-(+max);
+var q=Math.pow((Math.sin(Math.abs(h))),3);
+var w=Math.sqrt(Math.pow((k),2)+3.14);
+var tg=(Math.sin(k))/(Math.cos(k));
+var res=Math.abs((+q)/(+w))+(+tg);
+var j='res= '+res;
+alert(j);
+var j='max= ' + max;
+alert(j);
+var j='min= ' + min;
+alert(j);
+//    }
+</script>
+
+</body>
+</html>
