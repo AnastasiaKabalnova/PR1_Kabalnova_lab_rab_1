@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+</head>
+<body>
+
+<script>
+var m=parseFloat(prompt('Vvedite c', ''));
+var n=parseFloat(prompt('Vvedite d', ''));
+var i=2;
+var p=m;
+var q=n;
+do
+{
+    if ((p%i==0) && (q%i==0))
+    {
+    q=q/i;
+    p=p/i;
+        j='q='+q;
+        alert(j);
+        j='p='+p;
+        alert(j);
+    }
+else {i++; alert('i');}}
+while ((i==n)  (i==m));
+
+</script>
+
+</body>
+</html>
